@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Input</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="~/css/style.css" />
+    <script src="main.js"></script>
+</head>
+<body style="text-align:center;">
+@{
+    string yourname = ViewBag.name;
+    string language = ViewBag.language;
+    string location = ViewBag.location;
+    string message = ViewBag.message;
+}
+    <h1>Your Submittion</h1>
+    <ul>
+        <li>@yourname</li>
+        <li>@language</li>
+        <li>@location</li>
+        <li>@message</li>
+    </ul>
+    <form action="/">
+    <input type="submit" class="button-primary" value="Take Survey Again">
+    </form>
+
+    
+</body>
+</html>
